@@ -1,5 +1,4 @@
-DokuWiki Docker Container
-========================
+# DokuWiki Docker Container [![](https://images.microbadger.com/badges/image/bfogarty/dokuwiki.svg)](https://microbadger.com/images/bfogarty/dokuwiki "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/bfogarty/dokuwiki.svg)](https://microbadger.com/images/bfogarty/dokuwiki "Get your own version badge on microbadger.com")
 
 DokuWiki container with URL rewrite, authad, and X-Sendfile support.
 
@@ -9,15 +8,13 @@ To enable the X-Sendfile header, go to the Configuration Manager and set xsendfi
 
 For AD authentication, enable the [authad](https://www.dokuwiki.org/plugin:authad) plugin.
 
-To run:
--------
+## To run:
 
     docker run -d -p 80:80 --name dokuwiki bfogarty/dokuwiki
 
 The installer will then be accessible at: <http://localhost/install.php>
 
-To make data persistent:
-------------------------
+## To make data persistent:
 
 Create a data container:
 
@@ -31,8 +28,7 @@ To recreate your DokuWiki container, attach the volumes from your dokuwiki_data 
 
     docker run -d -p 80:80 --name dokuwiki --volumes-from dokuwiki_data bfogarty/dokuwiki
 
-To build:
---------
+## To build:
 
     git clone https://github.com/bfogarty/docker-files.git
     cd docker-files/dokuwiki
