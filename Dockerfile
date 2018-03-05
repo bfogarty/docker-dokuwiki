@@ -1,8 +1,8 @@
 FROM ubuntu:14.04
 MAINTAINER Brian Fogarty <bri@nfogarty.me>
 
-ENV DOKUWIKI_VERSION 2017-02-19a
-ENV MD5_CHECKSUM 78e8c27291fbc3de04c7f107c3f7725a
+ENV DOKUWIKI_VERSION 2017-02-19e
+ENV MD5_CHECKSUM 2549fe10ce07275c2b130b3685382630
 
 RUN apt-get update && \
     apt-get install -y wget lighttpd php5-cgi php5-gd php5-ldap && \
